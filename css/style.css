@@ -2,6 +2,10 @@ body, html {
     height: 100%;
 }
 
+section {
+  color:red;
+}
+
 .wrapper {
   width: 80%;
   margin: 0px auto;
@@ -16,8 +20,48 @@ body, html {
 }
 
 #banner #intro {
+  width: 50%;
+  float: left;
   padding-top: 30%;
 }
+
+#banner #left-intro{
+  padding-top: 20%;
+  padding-left: 2%;
+  width: 40%;
+  float: left;
+}
+
+#banner #left-intro #form_area{
+ padding: 20px;
+/*border: 1px solid #cccccc;*/
+border-radius: 20px;
+background: grey; /* For browsers that do not support gradients */
+background: -webkit-radial-gradient(grey 5%, BurlyWood  15%, IndianRed  60%); /* Safari 5.1-6.0 */
+background: -o-radial-gradient(grey 5%, BurlyWood  15%, IndianRed  60%); /* For Opera 11.6-12.0 */
+background: -moz-radial-gradient(grey 5%, BurlyWood  15%, IndianRed  60%); /* For Firefox 3.6-15 */
+background: radial-gradient(grey 5%, BurlyWood  15%, IndianRed  60%); /* Standard syntax */
+}
+
+#banner #left-intro #form_area:hover{
+
+}
+input[type="search"] {
+  padding: 20px;
+  font-size: 48px;
+  height: 23px;
+}
+
+ #left-intro img {
+   width: 50%;
+ }
+
+ #left-intro img:hover {
+   -ms-transform: rotate(10deg);*/
+   -webkit-transform: rotate(10deg);
+   transform: translate(50%, 0%) rotate(10deg);
+   transition: 2s;
+ }
 
 #banner #intro h1 {
   padding: 3%;
@@ -32,7 +76,7 @@ body, html {
 #menu {
   background: #F08080;
   width: 100%;
-  margin-top: -30px;
+  margin-top: -50px;
   border-radius: 10px;
 }
 
@@ -48,11 +92,26 @@ body, html {
   color: #F8F8FF;
 }
 
-#model h2{
-   text-align: center;
-   transform: scaleX(0.5);
+#menu ul li a:hover {
+  font-size: 40px;
+
+  text-decoration: none;
+  color: red;
+
+-ms-transform: rotate(120deg);
+-webkit-transform: rotate(120deg);
+transform: rotate(130deg);
+transition: 2s;
 }
 
+#model h2{
+   text-align: center;
+}
+
+
+/*=================================================================================
+    ABOUT SECRTION
+==================================================================================*/
 #about_section {
   background: url("../images/about_back.jpg") no-repeat center;
   background-size: 100%, 80%;
@@ -95,4 +154,35 @@ body, html {
 .box img{
   width: 80%;
   margin: 0px auto;
+}
+
+.pull-left {
+  float: left;
+}
+
+.txt-shadow {
+  text-shadow: 2px 4px black;
+}
+
+/*==============================================================================
+   FOOTER
+================================================================================*/
+footer {
+  background: url("../images/footer_bg.jpg") no-repeat center;
+  background-size: 100%, 80%;
+}
+
+/*===========================================================================
+    Media queries
+================================================================================*/
+@media (max-width:650px) {
+    .box {
+        width: 100%;
+    }
+}
+
+@media (max-width:850px) and (min-width:650px) {
+    .box {
+        width: 40%;
+    }
 }

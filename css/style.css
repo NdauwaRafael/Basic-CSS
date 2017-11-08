@@ -66,3 +66,33 @@ body, html {
   background: rgba(128, 128, 128, 0.9);
   padding: 20px;
 }
+.overlay1 {
+  background: rgba(255,255,255,1);
+  padding: 20px;
+  overflow: hidden;
+}
+
+/*===========================================================
+     CATEGORIES
+=============================================================*/
+#categories_section {
+  width: 100%;
+
+  background-size: 100%, 80%;
+  color: #00695c;
+  text-align: center;
+  overflow: hidden;
+}
+.box {
+  width: 25%;
+  margin: 2% ;
+  padding: 10px;
+  border: 1px solid #00695c;
+  border-radius: 5px;
+  float: left;
+}
+
+.box img{
+  width: 80%;
+  margin: 0px auto;
+}
